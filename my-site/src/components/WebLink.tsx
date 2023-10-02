@@ -7,7 +7,7 @@ interface IWebLinkProps {
 
 const WebLink = (props: IWebLinkProps) => {
 
-  const defaultIcon = 'fa-globe'
+  const defaultIcon = 'fas fa-globe'
 
   return (
     <div className="inline-block w-full flex flex-row justify-start align-middle">

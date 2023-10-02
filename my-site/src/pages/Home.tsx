@@ -14,18 +14,28 @@ interface IHomeProps {
 
 const WebLinksList = () => {
 
-  const fa_base = 'fa-lg fa-fw fa-brands'
+  const fa_base = 'fa-lg fa-fw'
 
   const links = [
     {
-      icon: `${fa_base} fa-github`,
+      icon: `${fa_base} fa-brands fa-github`,
       link: 'https://github.com/matt-wiley',
-      text: '/matt-wiley'
+      text: 'matt-wiley'
     },
     {
-      icon: `${fa_base} fa-linkedin`,
+      icon: `${fa_base} fa-brands fa-linkedin`,
       link: 'https://www.linkedin.com/in/matt-b-wiley',
-      text: '/matt-b-wiley'
+      text: 'in/matt-b-wiley'
+    },
+    {
+      icon: `${fa_base} fa-brands fa-instagram`,
+      link: 'https://www.instagram.com/matt.wiley.person',
+      text: '@matt.wiley.person'
+    },
+    {
+      icon: `${fa_base} fas fa-globe`,
+      link: 'https://matt-wiley.github.io',
+      text: 'matt-wiley.github.io'
     }
   ]
 
