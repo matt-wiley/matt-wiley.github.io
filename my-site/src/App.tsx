@@ -9,6 +9,8 @@ import './App.css';
 
 function App() {
 
+  const SHOW_SIGNALS = false;
+
   return (
     <>
       <div className='flex flex-row print:invisible relative'>
@@ -16,20 +18,21 @@ function App() {
           {
             text: 'Home',
             link: '/home'
-          },
-          {
-            text: 'Experience',
-            link: '/experience'
           }
         ]}/>
-        <div className='flex flex-row pr-4'>
-          {/* SIGNALS FOR WHAT RESPONSIVE WIDTHS ARE FIRING */}
-          <span className='text-gray-400 sm:text-red-500'>SM</span>&nbsp;|&nbsp;
-          <span className='text-gray-400 md:text-red-500'>MD</span>&nbsp;|&nbsp;
-          <span className='text-gray-400 lg:text-red-500'>LG</span>&nbsp;|&nbsp;
-          <span className='text-gray-400 xl:text-red-500'>XL</span>&nbsp;|&nbsp;
-          <span className='text-gray-400 2xl:text-red-500'>2XL</span>
-        </div>
+        {
+          (SHOW_SIGNALS) ?
+            <div className='flex flex-row pr-4'>
+              {/* SIGNALS FOR WHAT RESPONSIVE WIDTHS ARE FIRING */}
+              <span className='text-gray-400 sm:text-red-500'>SM</span>&nbsp;|&nbsp;
+              <span className='text-gray-400 md:text-red-500'>MD</span>&nbsp;|&nbsp;
+              <span className='text-gray-400 lg:text-red-500'>LG</span>&nbsp;|&nbsp;
+              <span className='text-gray-400 xl:text-red-500'>XL</span>&nbsp;|&nbsp;
+              <span className='text-gray-400 2xl:text-red-500'>2XL</span>
+            </div>
+          :
+            null
+        }
       </div>
       <div className='mbw-min-w'>
         <HashRouter>
