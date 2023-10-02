@@ -3,10 +3,45 @@ import List, { ListType } from '../components/List';
 import NamePlate from '../components/NamePlate';
 import RoleSummary from '../components/RoleSummary';
 import Section from '../components/Section';
+import WebLink from '../components/WebLink';
 
 
 interface IHomeProps {
 
+}
+
+
+
+const WebLinksList = () => {
+
+  const fa_base = 'fa-lg fa-fw fa-brands'
+
+  const links = [
+    {
+      icon: `${fa_base} fa-github`,
+      link: 'https://github.com/matt-wiley',
+      text: '/matt-wiley'
+    },
+    {
+      icon: `${fa_base} fa-linkedin`,
+      link: 'https://www.linkedin.com/in/matt-b-wiley',
+      text: '/matt-b-wiley'
+    }
+  ]
+
+  const webLinkElements = (() => {
+    return links.map((link, index) => {
+      return (
+        <div className='pb-0.5'>
+          <WebLink key={index} icon={link.icon} link={link.link} text={link.text} />
+        </div>
+      )
+    })
+  })()
+
+  return (
+    <List type={ListType.None} items={webLinkElements} />
+  )
 }
 
 const SecondaryInfo = () => {
@@ -54,6 +89,10 @@ const SecondaryInfo = () => {
           "PBS Spacetime",
           "PBS Eons"
         ]} />
+      </Section>
+      <DefaultSpacer />
+      <Section headerText='Links'>
+        <WebLinksList />
       </Section>
     </>
   )
@@ -131,7 +170,7 @@ const Home = (props: IHomeProps) => {
                 ]}
               />
             </Section>
-            <div className='border-t-2 md:hidden'>
+            <div className='border-t-2 mb-20 md:hidden'>
               <DefaultSpacer />
               <SecondaryInfo />
             </div>
