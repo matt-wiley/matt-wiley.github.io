@@ -116,6 +116,7 @@ const Home = (props: IHomeProps) => {
         <a
           href="/downloads/Resume_Wiley.pdf"
           className='absolute top-0 right-0 text-sm text-gray-500 print:hidden pr-7'
+          title="Printable Version"
         >🖨️<span className='hidden md:inline'> Printable Version</span></a>
         <div className=" h-fit w-full border-b-2 print:border-gray-400 pb-4">
           {/* HEADER */}
