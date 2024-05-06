@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface IWebLinkProps {
   icon?: string;
   image?: string;

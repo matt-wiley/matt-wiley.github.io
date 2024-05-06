@@ -1,3 +1,5 @@
+import React from 'react';
+
 export enum ListType {
   Numbered = "numbered",
   Bulleted = "bulleted",

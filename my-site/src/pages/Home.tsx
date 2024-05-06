@@ -1,3 +1,5 @@
+import React from 'react';
+
 import DefaultSpacer from '../components/DefaultSpacer';
 import List, { ListType } from '../components/List';
 import NamePlate from '../components/NamePlate';
@@ -112,7 +114,7 @@ const SecondaryInfo = () => {
 const Home = (props: IHomeProps) => {
   return (
     <>
-      <div className="max-w-4xl m-auto pl-5 pr-5 print:p-0 relative">
+      <div className="max-w-4xl m-auto pl-5 pr-5 relative">
         <a
           href="/downloads/Resume_Wiley.pdf"
           className='absolute top-0 right-0 text-sm text-gray-500 print:hidden pr-7'
@@ -134,12 +136,8 @@ const Home = (props: IHomeProps) => {
           </div>
         </div>
         <div className='flex flex-row w-full mt-4'>
-          <div className='flex-none w-0 invisible md:visible md:w-3/12'>
-            {/* LEFT COLUMN */}
-            <SecondaryInfo />
-          </div>
-          <div className='flex-none w-full md:w-9/12 md:border-l-2 print:border-gray-400 md:pl-2'>
-            {/* RIGHT COLUMN */}
+          <div className='flex-none w-full md:w-9/12 print:w-9/12'>
+            {/* MAIN CONTENT */}
             <Section headerText="Experience">
               <DefaultSpacer />
               <RoleSummary
@@ -181,10 +179,14 @@ const Home = (props: IHomeProps) => {
                 ]}
               />
             </Section>
-            <div className='border-t-2 mb-20 md:hidden'>
+            <div className='border-t-2 mb-20 md:hidden print:hidden'>
               <DefaultSpacer />
               <SecondaryInfo />
             </div>
+          </div>
+          <div className='flex-none w-0 invisible md:visible md:w-3/12 md:border-l-2 print:visible print:border-gray-400 md:pl-2'>
+            {/* SIDEBAR */}
+            <SecondaryInfo />
           </div>
         </div>
       </div>

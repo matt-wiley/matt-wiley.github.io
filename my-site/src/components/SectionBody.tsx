@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { PropsWithChildren } from "react";
 
 interface ISectionBodyProps extends PropsWithChildren {

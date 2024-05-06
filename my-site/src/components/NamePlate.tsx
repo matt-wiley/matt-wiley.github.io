@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface INamePlateProps {
   name: string,
   labelLine: string,
