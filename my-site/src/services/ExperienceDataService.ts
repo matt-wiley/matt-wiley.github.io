@@ -13,9 +13,14 @@ export interface IEmployer {
 export interface IRole {
   description: nullableString;
   end_date: nullableString;
-  notes: nullableString[];
+  notes: INote[];
   start_date: nullableString;
   title: nullableString;
+}
+
+export interface INote {
+  summary: nullableString;
+  is_enabled: boolean;
 }
 
 export class ExperienceDataService {

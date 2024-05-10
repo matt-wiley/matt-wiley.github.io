@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import { ExperienceDataService } from '../services/ExperienceDataService';
 import { DataPresentationService as presenter } from '../services/DataPresentationService';
@@ -146,29 +146,27 @@ const Home = (props: IResumeProps) => {
               {
                 ExperienceDataService.getExperienceData().map((employer, index) => {
                   return (
-                    <div key={index}>
-                      <div className='font-semibold'>{employer.name}</div>
-                      <div>{employer.location}</div>
-                      <div>{employer.start_date} - {employer.end_date}</div>
+                    <Fragment key={index}>
                       <List type={ListType.None} items={employer.roles.map((role, index) => {
                         return (
-                          <RoleSummary 
-                            key={index} 
-                            role={''+role.title} 
-                            company={''+employer.name}
-                            startDate={presenter.presentDate(role.start_date)}
-                            endDate={presenter.presentDate(role.end_date)}
-                            synopsis={''+role.description}
-                            accomplishments={role.notes.map((note, index) => {
-                              return (
-                                <div key={index}>{note}</div>
-                              )
-                            })}
-                            />
+                          <Fragment key={index}>
+                            <RoleSummary 
+                              role={''+role.title} 
+                              company={''+employer.name}
+                              startDate={presenter.presentDate(role.start_date)}
+                              endDate={presenter.presentDate(role.end_date)}
+                              synopsis={''+role.description}
+                              accomplishments={role.notes.filter(note => note.is_enabled).map((note, index) => {
+                                return (
+                                  <div key={index}>{note.summary}</div>
+                                )
+                              })}
+                              />
+                            <DefaultSpacer />
+                          </Fragment>
                         )
                       })} />
-                      <DefaultSpacer />
-                    </div>
+                    </Fragment>
                   )
                 })
               }

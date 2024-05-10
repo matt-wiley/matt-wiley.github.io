@@ -23,9 +23,12 @@ const RoleSummary = (props: IRoleSummaryProps) => {
           {props.startDate} - {props.endDate}
         </div>
       </div>
-      <div className="pt-2">
-        {props.synopsis}
-      </div>
+      { 
+        (props.synopsis !== 'null' && props.synopsis !== 'undefined') ? 
+          <div className="pt-2">
+            {props.synopsis}
+          </div> : ''
+      }
       <div className="p-4 test-xs">
         <List 
           type={ListType.Bulleted}
