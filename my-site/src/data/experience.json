@@ -1,0 +1,103 @@
+{
+  "employers": [
+    {
+      "end_date": null,
+      "location": "Cincinnati, OH",
+      "name": "84.51",
+      "roles": [
+        {
+          "description": "--TODO--",
+          "end_date": null,
+          "notes": [
+            "Standardized CI tooling via TeamCity templates to create a “golden path” development process for all Java and Python dev teams",
+            "Integrated JFrog Xray and SonarQube into TeamCity templates to make devs more aware of security and quality issues earlier in the SDLC",
+            "Created standard set of enterprise-ready Docker images to better enable dev teams with certificate installations and common environment configurations",
+            "Executed automated migration of all repos from GitHub Enterprise Server to GitHub Enterprise Cloud, and managed related communications and support",
+            "Implemented standardized CI and CD processes in GitHub using GitHub Actions and Reusable Workflows",
+            "Managed and mentored a cohort of bootcamp contractors helping with additional on-prem to cloud migration efforts"
+          ],
+          "start_date": "2019-09-01",
+          "title": "DevOps Engineer"
+        },
+        {
+          "description": "--TODO--",
+          "end_date": "2019-09-01",
+          "notes": [
+            "Lead team of developers responsible for delivering the web interface for internal, cloud-based data science platform",
+            "Collaborated with architects, product designers, and data scientists to develop new features and enhance UI components to better serve our customers",
+            "Created and maintained Python-based API for provisioning compute resources in GKE"
+          ],
+          "start_date": "2018-03-01",
+          "title": "Lead Software Engineer"
+        },
+        {
+          "description": "--TODO--",
+          "end_date": "2018-03-01",
+          "notes": [
+            "Created multi-user experience using Android, Electron (desktop web UI), and Angular to explore ways busy families can stay connected around food and meal planning",
+            "Developed an experience using Unity 3D demostrating how Category Managers in the near future might leverage VR to remotely strategize on category decisions across the country from a unified location",
+            "Constructed an experience using Unity 3D and the Microsoft HoloLens to illustrate how mixed reality could be leveraged to integrate data more deeply with the in-store walk-through process",
+            "Developed an Android app experience showing how the intersection of augmented reality and shopper-specific data creates the opportunity to personalize the traditional print experiences shoppers already have"
+          ],
+          "start_date": "2015-07-20",
+          "title": "Senior UI Developer"
+        }
+      ],
+      "start_date": "2015-07-20"
+    },
+    {
+      "end_date": "2014-12-01",
+      "location": "Cincinnati, OH",
+      "name": "Deca Interactive",
+      "roles": [
+        {
+          "description": "--TODO--",
+          "end_date": "2014-12-01",
+          "notes": [
+            "Developed music festival event app used by the Bunbury and Buckle Up Music Festivals"
+          ],
+          "start_date": "2014-04-01",
+          "title": "Software Developer"
+        }
+      ],
+      "start_date": "2014-04-01"
+    },
+    {
+      "end_date": "2015-20-07",
+      "location": "Cincinnati, OH",
+      "name": "Cardinal Solutions Group",
+      "roles": [
+        {
+          "description": "--TODO--",
+          "end_date": "2015-20-07",
+          "notes": [
+            "Assisted in the configuration of an off-the-shelf application focused on managing lines of business for insurance companies",
+            "Developed a small Java-based CLI tool to handle ingestion of custom messaging protocol between business and banking systems",
+            "Collaborated with internal design team to create iPad app showcasing important projects and highlighting company capabilities",
+            "Taught one-week course on core OOP and Java language concepts"
+          ],
+          "start_date": "2013-01-01",
+          "title": "Java/Mobile Consultant"
+        }
+      ],
+      "start_date": "2013-01-01"
+    },
+    {
+      "end_date": "2013-01-01",
+      "location": "Highland Heights, KY",
+      "name": "Center for Applied Informatics",
+      "roles": [
+        {
+          "description": "--TODO--",
+          "end_date": "2013-01-01",
+          "notes": [
+            "Developed Android applications for the Kentucky Department of Education enabling teacher and technologists to get important alerts and stay informed"
+          ],
+          "start_date": "2011-03-01",
+          "title": "Student Android Developer"
+        }
+      ],
+      "start_date": "2011-03-01"
+    }
+  ]
+}

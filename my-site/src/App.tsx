@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
+import Resume from './pages/Resume';
 import Redirect from './components/Redirect';
 import Experience from './pages/Experience';
 import Nav from './components/Nav';
@@ -17,8 +17,8 @@ function App() {
       <div className='flex flex-row print:invisible relative'>
         <Nav navItems={[
           {
-            text: 'Home',
-            link: '/home'
+            text: 'Resume',
+            link: '/resume'
           }
         ]}/>
         {
@@ -38,9 +38,9 @@ function App() {
       <div className='mbw-min-w'>
         <HashRouter>
           <Routes>
-            <Route path="*" element={<Redirect to="/home" /> } />
-            <Route path="/" element={<Redirect to="/home" /> } />
-            <Route path="/home" element={<Home /> } />
+            <Route path="*" element={<Redirect to="/resume" /> } />
+            <Route path="/" element={<Redirect to="/resume" /> } />
+            <Route path="/resume" element={<Resume /> } />
             <Route path="/experience" element={<Experience /> } />
           </Routes>
         </HashRouter>

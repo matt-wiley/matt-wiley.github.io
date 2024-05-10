@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { ExperienceDataService } from '../services/ExperienceDataService';
+import { DataPresentationService as presenter } from '../services/DataPresentationService';
+
+
 import DefaultSpacer from '../components/DefaultSpacer';
 import List, { ListType } from '../components/List';
 import NamePlate from '../components/NamePlate';
@@ -8,7 +12,7 @@ import Section from '../components/Section';
 import WebLink from '../components/WebLink';
 
 
-interface IHomeProps {
+interface IResumeProps {
 
 }
 
@@ -111,7 +115,7 @@ const SecondaryInfo = () => {
 }
 
 
-const Home = (props: IHomeProps) => {
+const Home = (props: IResumeProps) => {
   return (
     <>
       <div className="max-w-4xl m-auto pl-5 pr-5 relative">
@@ -136,48 +140,38 @@ const Home = (props: IHomeProps) => {
           </div>
         </div>
         <div className='flex flex-row w-full mt-4'>
-          <div className='flex-none w-full md:w-9/12 print:w-9/12'>
+          <div className='flex-none w-full md:w-9/12 print:w-9/12 pr-6'>
             {/* MAIN CONTENT */}
             <Section headerText="Experience">
-              <DefaultSpacer />
-              <RoleSummary
-                role="Lead Software Engineer"
-                company="84.51º"
-                startDate="Aug 2018"
-                endDate="Present"
-                synopsis="Providing technical leadership and individual contribution across multiple initiatives. Developing tools ranging from the web UI and provisioning API for a cloud-based data science platform to a DevSecOps framework to enable and accelerate application development."
-                accomplishments={[
-                  "Led a team of co-ops and contractors in delivering the web UI of an internal data science platform, achieving first business-value projects on platform inside 6 months, and mentoring 2 co-ops into full-time positions",
-                  "Launched service and automation tools to collect and assess repository metrics enabling migration of 3K+ repos from on premise to cloud, archival of 15K+ repos to inactive storage, and saving nearly 6 months of manual migration effort",
-                  "Instituted component discovery portal documenting 60+ reusable components and their usages, and promoting an innersource contribution model for use by the Engineering function at large",
-                  "Engineered a YAML-based, declarative CLI tool for easily stamping out new TeamCity pipelines, reducing pipeline construction time by 80%",
-                  "Established template-based Docker image build system for creating secure, enterprise- compliant Docker images and reducing lead time on new image creation by 75%"
-                ]}
-              />
-              <DefaultSpacer />
-              <RoleSummary
-                role="Senior UI Developer"
-                company="84.51º"
-                startDate="Jul 2015"
-                endDate="Aug 2018"
-                synopsis="Spearheaded software development efforts for the R&D Studio team. Created bleeding-edge, highly-personalized customer experiences for voice assistant, augmented reality, virtual reality, web and mobile devices."
-                accomplishments={[
-                  "Created a category management experience showing that virtual reality could allow a category manager to make edits on a specific shelf in a specific store, and leverage forecast analysis to see impact of potential changes",
-                  "Delivered an experience for the Microsoft Hololens demonstrating the opportunity to display data in the real world view of a category manager live in the store",
-                  "Devised an augmented reality experience to illustrate how a standard paper weekly ad could be enhanced with user data to create a real-time personalized weekly ad"
-                ]}
-              />
-              <DefaultSpacer />
-              <RoleSummary
-                role="Consultant, Senior I"
-                company="Cardinal Solutions Group"
-                startDate="Jan 2013"
-                endDate="Jul 2015"
-                synopsis="Collaborated with stakeholders within businesses to create or enhance applications and unlock critical business value. Worked with various clients to design, build and document solutions to technical problems."
-                accomplishments={[
-                  "Programmed flexible, Java-based system for ingesting hundreds of gigabytes of data from multiple sources, and transforming them into personalized weekly ad results delivered to over 40 million customers across the US"
-                ]}
-              />
+              {
+                ExperienceDataService.getExperienceData().map((employer, index) => {
+                  return (
+                    <div key={index}>
+                      <div className='font-semibold'>{employer.name}</div>
+                      <div>{employer.location}</div>
+                      <div>{employer.start_date} - {employer.end_date}</div>
+                      <List type={ListType.None} items={employer.roles.map((role, index) => {
+                        return (
+                          <RoleSummary 
+                            key={index} 
+                            role={''+role.title} 
+                            company={''+employer.name}
+                            startDate={presenter.presentDate(role.start_date)}
+                            endDate={presenter.presentDate(role.end_date)}
+                            synopsis={''+role.description}
+                            accomplishments={role.notes.map((note, index) => {
+                              return (
+                                <div key={index}>{note}</div>
+                              )
+                            })}
+                            />
+                        )
+                      })} />
+                      <DefaultSpacer />
+                    </div>
+                  )
+                })
+              }
             </Section>
             <div className='border-t-2 mb-20 md:hidden print:hidden'>
               <DefaultSpacer />
