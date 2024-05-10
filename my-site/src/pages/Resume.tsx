@@ -134,7 +134,7 @@ const Home = (props: IResumeProps) => {
             location="Fort Thomas, KY"
           />
           <div className='text-justify'>
-            <Section headerText="Summary">
+            <Section headerText="">
               Software engineer with a passion for continuous improvement and automation and over ten years experience across the full software development stack. Seeking opportunity to join a diverse team of engineers to learn from, lead and mentor while delivering well-crafted solutions to business problems.
             </Section>
           </div>

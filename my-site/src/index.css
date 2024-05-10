@@ -587,10 +587,6 @@ video {
   height: fit-content;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .w-0 {
   width: 0px;
 }

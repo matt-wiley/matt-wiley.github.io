@@ -12,7 +12,10 @@ interface ISectionProps extends PropsWithChildren{
 const Section = (props: ISectionProps) => {
   return (
     <div className="p-2">
-      <SectionHeader text={props.headerText} />
+      {
+        (props.headerText !== 'null' && props.headerText !== 'undefined') ? 
+        <SectionHeader text={props.headerText} /> : ''
+      }
       <SectionBody>
         {props.children}
       </SectionBody>
