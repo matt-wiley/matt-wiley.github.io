@@ -46,7 +46,7 @@
           "end_date": "2019-09-01",
           "notes": [
             {
-              "summary": "Led team of developers responsible for delivering the web interface for internal, cloud-based data science platform",
+              "summary": "Led team of developers responsible for delivering the web interface for an internal, cloud-based data science platform, built using Angular and leveraging Google Cloud Platform services",
               "is_enabled": true 
             },
             {
@@ -66,7 +66,7 @@
           "end_date": "2018-03-01",
           "notes": [
             {
-              "summary": "Developed a multi-user experience using Android, Electron (desktop web UI), and Angular to explore ways busy families can stay connected around food and meal planning",
+              "summary": "Created a multi-user experience using Android, Electron (desktop web UI), and Angular to explore ways busy families can stay connected around food and meal planning",
               "is_enabled": true 
             },
             {
@@ -98,7 +98,7 @@
           "end_date": "2014-12-01",
           "notes": [
             {
-              "summary": "Developed music festival event app used by the Bunbury and Buckle Up Music Festivals",
+              "summary": "Developed the Android version of a music festival event app used by the Bunbury and Buckle Up Music Festivals in Cincinnati, Ohio",
               "is_enabled": true 
             }
           ],
@@ -118,7 +118,7 @@
           "end_date": "2015-07-20",
           "notes": [
             {
-              "summary": "Assisted in the configuration of an off-the-shelf application focused on managing lines of business for insurance companies",
+              "summary": "Assisted in the configuration of an off-the-shelf application using the Gosu JVM-based language and IntelliJ IDEA, focused on managing lines of business for insurance companies",
               "is_enabled": false 
             },
             {
@@ -128,6 +128,10 @@
             {
               "summary": "Collaborated with internal design team to create iPad app showcasing important projects and highlighting company capabilities",
               "is_enabled": true 
+            },
+            {
+              "summary": "Created iPad applitcation backed by SharePoint Lists which catalogued all company sales resources and technical specifications for a local window and door company",
+              "is_enabled": false
             },
             {
               "summary": "Taught one-week course on core OOP and Java language concepts",

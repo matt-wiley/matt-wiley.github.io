@@ -60,6 +60,14 @@ const WebLinksList = () => {
   )
 }
 
+const SecondaryInfoSpacer = () => {
+  return (
+    <div className='h-6'>
+      &nbsp;
+    </div>
+  )
+}
+
 const SecondaryInfo = () => {
   return (
     <>
@@ -69,7 +77,7 @@ const SecondaryInfo = () => {
         <div>College of Informatics</div>
         <div>December 2012</div>
       </Section>
-      <DefaultSpacer />
+      <SecondaryInfoSpacer />
       <Section headerText="Strengths">
         <List type={ListType.None} items={[
           "Leadership",
@@ -77,7 +85,7 @@ const SecondaryInfo = () => {
           "Strategic Thinking",
           "Process Improvement",
         ]} />
-        <DefaultSpacer />
+        <DefaultSpacer heightClass='h-3'/>
         <List type={ListType.None} items={[
           "Java",
           "Python",
@@ -89,7 +97,7 @@ const SecondaryInfo = () => {
           "GitHub Actions"
         ]} />
       </Section>
-      <DefaultSpacer />
+      <SecondaryInfoSpacer />
       <Section headerText="Hobbies & Interests">
         <List type={ListType.None} items={[
           "Reading",
@@ -98,7 +106,7 @@ const SecondaryInfo = () => {
           "Learning",
           "Solving puzzles"
         ]} />
-        <DefaultSpacer />
+        <DefaultSpacer heightClass='h-3'/>
         <List type={ListType.None} items={[
           "Physics & Cosmology",
           "Fiction & Sci-Fi",
@@ -106,7 +114,7 @@ const SecondaryInfo = () => {
           "PBS Eons"
         ]} />
       </Section>
-      <DefaultSpacer />
+      <SecondaryInfoSpacer />
       <Section headerText='Links'>
         <WebLinksList />
       </Section>

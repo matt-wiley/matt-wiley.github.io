@@ -19,6 +19,10 @@ function App() {
           {
             text: 'Resume',
             link: '/resume'
+          },
+          {
+            text: 'Experience',
+            link: '/experience'
           }
         ]}/>
         {
