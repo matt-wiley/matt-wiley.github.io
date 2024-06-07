@@ -8,7 +8,7 @@ export enum ListType {
 
 interface IListProps {
   type: ListType;
-  items: string[] | JSX.Element[];
+  items: any[];
   itemStyle?: string;
 }
 
@@ -28,11 +28,11 @@ const List = (props: IListProps) => {
   return (
     <ul className={listStyle}>
       { 
-        props.items.map((item, i, _) => {
-          return (
+        props.items.map(
+          (item, i) => (
             <li key={i} className={props.itemStyle}>{item}</li>
-          );
-        })
+          )
+        )
       }
     </ul>
   )
