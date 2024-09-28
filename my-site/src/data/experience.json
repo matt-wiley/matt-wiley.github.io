@@ -1,168 +1,180 @@
 {
-  "employers": [
-    {
-      "end_date": null,
-      "location": "Cincinnati, OH",
-      "name": "84.51˚",
-      "roles": [
+    "employers": [
         {
-          "description": null,
-          "end_date": null,
-          "notes": [
-            {
-              "summary": "Established standardized CI/CD workflows using TeamCity and GitHub Actions, integrated security tools, Docker images, and facilitated migration to GitHub Enterprise Cloud while mentoring contractors.",
-              "is_enabled": true 
-            },
-            {
-              "summary": "Standardized CI tooling via TeamCity templates to create a “golden path” development process for all Java and Python dev teams",
-              "is_enabled": false 
-            },
-            {
-              "summary": "Integrated JFrog Xray and SonarQube into TeamCity templates to make devs more aware of security and quality issues earlier in the SDLC",
-              "is_enabled": false 
-            },
-            {
-              "summary": "Created standard set of enterprise-ready Docker images to better enable dev teams with certificate installations and common environment configurations",
-              "is_enabled": false 
-            },
-            {
-              "summary": "Executed automated migration of all repos from GitHub Enterprise Server to GitHub Enterprise Cloud, and managed related communications and support",
-              "is_enabled": false 
-            },
-            {
-              "summary": "Implemented standardized CI and CD processes in GitHub using GitHub Actions and Reusable Workflows",
-              "is_enabled": false 
-            },
-            {
-              "summary": "Managed and mentored a cohort of bootcamp contractors helping with additional on-prem to cloud migration efforts",
-              "is_enabled": false 
-            }
-          ],
-          "start_date": "2019-09-01",
-          "title": "DevOps Engineer"
+            "end_date": null,
+            "location": "Cincinnati, OH",
+            "name": "84.51˚",
+            "roles": [
+                {
+                    "description": null,
+                    "end_date": null,
+                    "notes": [
+                        {
+                            "summary": "Developed a Svelte-based chat app allowing users to learn about generative AI by using various LLMs in a responsible and ethical way.",
+                            "is_enabled": true
+                        }
+                    ],
+                    "start_date": "2024-08-01",
+                    "title": "Lead Frontend Engineer"
+                },
+                {
+                    "description": null,
+                    "end_date": "2024-08-01",
+                    "notes": [
+                        {
+                            "summary": "Designed and implemented standardized CI/CD workflows using TeamCity and GitHub Actions, integrating security tools and Docker images, and led the migration to GitHub Enterprise Cloud.",
+                            "is_enabled": true
+                        },
+                        {
+                            "summary": "Developed standardized CI tooling with TeamCity templates to optimize development workflows for Java and Python teams.",
+                            "is_enabled": false
+                        },
+                        {
+                            "summary": "Enhanced CI/CD pipelines by incorporating JFrog Xray and SonarQube into TeamCity, improving early awareness of security and quality concerns.",
+                            "is_enabled": false
+                        },
+                        {
+                            "summary": "Developed a standardized set of enterprise-ready Docker images to streamline certificate installations and environment configurations for development teams.",
+                            "is_enabled": false
+                        },
+                        {
+                            "summary": "Automated the migration of all repositories from GitHub Enterprise Server to GitHub Enterprise Cloud, ensuring smooth communication and support throughout the process.",
+                            "is_enabled": false
+                        },
+                        {
+                            "summary": "Configured CI/CD pipelines using GitHub Actions and Reusable Workflows to standardize development practices.",
+                            "is_enabled": false
+                        },
+                        {
+                            "summary": "Contributed to on-prem to cloud migration efforts, working alongside a team of bootcamp contractors to accelerate the process.",
+                            "is_enabled": false
+                        }
+                    ],
+                    "start_date": "2019-09-01",
+                    "title": "DevOps Engineer"
+                },
+                {
+                    "description": null,
+                    "end_date": "2019-09-01",
+                    "notes": [
+                        {
+                            "summary": "Contributed to building a cloud-based data science platform's web interface with Angular, integrating Google Cloud Platform services.",
+                            "is_enabled": true
+                        },
+                        {
+                            "summary": "Enhanced UI components and developed new features by collaborating with architects, product designers, and data scientists to meet customer needs.",
+                            "is_enabled": true
+                        },
+                        {
+                            "summary": "Contributed to the development of a a Python-based API for provisioning compute resources in Google Kubernetes Engine (GKE), ensuring scalable resource management.",
+                            "is_enabled": false
+                        }
+                    ],
+                    "start_date": "2018-03-01",
+                    "title": "Lead Software Engineer"
+                },
+                {
+                    "description": null,
+                    "end_date": "2018-03-01",
+                    "notes": [
+                        {
+                            "summary": "Built a cross-platform application with Android, Electron, and Angular, providing busy families with tools for staying connected around meal planning.",
+                            "is_enabled": true
+                        },
+                        {
+                            "summary": "Created a Unity 3D experience demonstrating how Category Managers could leverage VR for remote strategic decision-making across different locations.",
+                            "is_enabled": true
+                        },
+                        {
+                            "summary": "Built a Unity 3D and HoloLens application demonstrating how mixed reality can enrich the in-store walk-through process with deeper data integration.",
+                            "is_enabled": true
+                        },
+                        {
+                            "summary": "Developed an Android application showcasing the potential of AR and shopper data to enhance and personalize existing print experiences.",
+                            "is_enabled": true
+                        }
+                    ],
+                    "start_date": "2015-07-20",
+                    "title": "Senior UI Developer"
+                }
+            ],
+            "start_date": "2015-07-20"
         },
         {
-          "description": null,
-          "end_date": "2019-09-01",
-          "notes": [
-            {
-              "summary": "Led team of developers responsible for delivering the web interface for an internal, cloud-based data science platform, built using Angular and leveraging Google Cloud Platform services",
-              "is_enabled": true 
-            },
-            {
-              "summary": "Collaborated with architects, product designers, and data scientists to develop new features and enhance UI components to better serve our customers",
-              "is_enabled": true 
-            },
-            {
-              "summary": "Created and maintained Python-based API for provisioning compute resources in GKE",
-              "is_enabled": false 
-            }
-          ],
-          "start_date": "2018-03-01",
-          "title": "Lead Software Engineer"
+            "end_date": "2014-12-01",
+            "location": "Cincinnati, OH",
+            "name": "Deca Interactive",
+            "roles": [
+                {
+                    "description": null,
+                    "end_date": "2014-12-01",
+                    "notes": [
+                        {
+                            "summary": "Developed a feature-rich Android app for the Bunbury and Buckle Up Music Festivals, improving event accessibility and attendee experience.",
+                            "is_enabled": true
+                        }
+                    ],
+                    "start_date": "2014-04-01",
+                    "title": "Android Developer"
+                }
+            ],
+            "start_date": "2014-04-01"
         },
         {
-          "description": null,
-          "end_date": "2018-03-01",
-          "notes": [
-            {
-              "summary": "Created a multi-user experience using Android, Electron (desktop web UI), and Angular to explore ways busy families can stay connected around food and meal planning",
-              "is_enabled": true 
-            },
-            {
-              "summary": "Developed an experience using Unity 3D demostrating how Category Managers in the near future might leverage VR to remotely strategize on category decisions across the country from a unified location",
-              "is_enabled": true 
-            },
-            {
-              "summary": "Constructed an experience using Unity 3D and the Microsoft HoloLens to illustrate how mixed reality could be leveraged to integrate data more deeply with the in-store walk-through process",
-              "is_enabled": true 
-            },
-            {
-              "summary": "Developed an Android app experience showing how the intersection of augmented reality and shopper-specific data creates the opportunity to personalize the traditional print experiences shoppers already have",
-              "is_enabled": true 
-            }
-          ],
-          "start_date": "2015-07-20",
-          "title": "Senior UI Developer"
-        }
-      ],
-      "start_date": "2015-07-20"
-    },
-    {
-      "end_date": "2014-12-01",
-      "location": "Cincinnati, OH",
-      "name": "Deca Interactive",
-      "roles": [
+            "end_date": "2015-20-07",
+            "location": "Cincinnati, OH",
+            "name": "Cardinal Solutions Group",
+            "roles": [
+                {
+                    "description": null,
+                    "end_date": "2015-07-20",
+                    "notes": [
+                        {
+                            "summary": "Assisted in the configuration of an off-the-shelf application using the Gosu JVM-based language and IntelliJ IDEA, focused on managing lines of business for insurance companies.",
+                            "is_enabled": false
+                        },
+                        {
+                            "summary": "Built a Java CLI tool for efficient handling of custom messaging protocols, enhancing data exchange between business and banking systems.",
+                            "is_enabled": true
+                        },
+                        {
+                            "summary": "Partnered with the internal design team to develop an iPad app that showcased key projects and highlighted company capabilities.",
+                            "is_enabled": true
+                        },
+                        {
+                            "summary": "Developed an iPad application backed by SharePoint Lists to catalog sales resources and technical specifications for a window and door company.",
+                            "is_enabled": false
+                        },
+                        {
+                            "summary": "Conducted a one-week training course on core Object-Oriented Programming (OOP) and Java language fundamentals.",
+                            "is_enabled": false
+                        }
+                    ],
+                    "start_date": "2013-01-01",
+                    "title": "Java/Mobile Consultant"
+                }
+            ],
+            "start_date": "2013-01-01"
+        },
         {
-          "description": null,
-          "end_date": "2014-12-01",
-          "notes": [
-            {
-              "summary": "Developed the Android version of a music festival event app used by the Bunbury and Buckle Up Music Festivals in Cincinnati, Ohio",
-              "is_enabled": true 
-            }
-          ],
-          "start_date": "2014-04-01",
-          "title": "Android Developer"
+            "end_date": "2013-01-01",
+            "location": "Highland Heights, KY",
+            "name": "Center for Applied Informatics",
+            "roles": [
+                {
+                    "description": null,
+                    "end_date": "2013-01-01",
+                    "notes": [
+                        {
+                            "summary": "Developed Android apps for the Kentucky Department of Education, providing essential alerts and information to teachers and technologists.",
+                            "is_enabled": true
+                        }
+                    ],
+                    "start_date": "2011-03-01",
+                    "title": "Android Developer"
+                }
+            ],
+            "start_date": "2011-03-01"
         }
-      ],
-      "start_date": "2014-04-01"
-    },
-    {
-      "end_date": "2015-20-07",
-      "location": "Cincinnati, OH",
-      "name": "Cardinal Solutions Group",
-      "roles": [
-        {
-          "description": null,
-          "end_date": "2015-07-20",
-          "notes": [
-            {
-              "summary": "Assisted in the configuration of an off-the-shelf application using the Gosu JVM-based language and IntelliJ IDEA, focused on managing lines of business for insurance companies",
-              "is_enabled": false 
-            },
-            {
-              "summary": "Developed a small Java-based CLI tool to handle ingestion of custom messaging protocol between business and banking systems",
-              "is_enabled": true 
-            },
-            {
-              "summary": "Collaborated with internal design team to create iPad app showcasing important projects and highlighting company capabilities",
-              "is_enabled": true 
-            },
-            {
-              "summary": "Created iPad applitcation backed by SharePoint Lists which catalogued all company sales resources and technical specifications for a local window and door company",
-              "is_enabled": false
-            },
-            {
-              "summary": "Taught one-week course on core OOP and Java language concepts",
-              "is_enabled": false 
-            }
-          ],
-          "start_date": "2013-01-01",
-          "title": "Java/Mobile Consultant"
-        }
-      ],
-      "start_date": "2013-01-01"
-    },
-    {
-      "end_date": "2013-01-01",
-      "location": "Highland Heights, KY",
-      "name": "Center for Applied Informatics",
-      "roles": [
-        {
-          "description": null,
-          "end_date": "2013-01-01",
-          "notes": [
-            {
-              "summary": "Developed Android applications for the Kentucky Department of Education enabling teacher and technologists to get important alerts and stay informed",
-              "is_enabled": true
-            }
-          ],
-          "start_date": "2011-03-01",
-          "title": "Android Developer"
-        }
-      ],
-      "start_date": "2011-03-01"
-    }
-  ]
+    ]
 }
