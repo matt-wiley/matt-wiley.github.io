@@ -1,3 +1,3 @@
-# matt-b-wiley.github.io
+# matt-wiley.github.io
 
 https://matt-wiley.github.io/
